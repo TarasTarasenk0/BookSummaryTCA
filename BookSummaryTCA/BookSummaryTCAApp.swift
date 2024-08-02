@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+struct ContentView: View {
+    var body: some View {
+        SummaryDetailsScreen(store: .init(initialState: .init(), reducer: {
+            PlayerFeature()
+        }))
+    }
+}
+
+
 @main
 struct BookSummaryTCAApp: App {
     var body: some Scene {
